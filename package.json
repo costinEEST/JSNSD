@@ -2,10 +2,10 @@
   "name": "preparation",
   "version": "1.0.0",
   "description": "Preparation for JSNAD. Training course",
-  "main": "./03_create-web-server/index.js",
+  "main": "./04_serve-web-content/index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon ./03_create-web-server/index.js"
+    "start": "nodemon ./04_serve-web-content/index.js"
   },
   "keywords": [],
   "author": "",
