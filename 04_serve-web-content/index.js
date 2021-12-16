@@ -1,10 +1,12 @@
 import http from "http";
 import { join } from "path";
+import { finished } from "stream";
 
 import express from "express";
 import dotenv from "dotenv";
 
 import { __dirname } from "../utils.js";
+import dataStream from "./data.js";
 
 dotenv.config();
 
@@ -21,6 +23,22 @@ server.get("/", (_, res) => {
 
 server.get("/me", (_, res) => {
   res.send("UI dev");
+});
+
+server.get("/data", (_, res, next) => {
+  const data = dataStream();
+
+  data.pipe(res, { end: false });
+
+  finished(data, (err) => {
+    if (err) {
+      next(err);
+
+      return;
+    }
+
+    res.end();
+  });
 });
 
 http.createServer(server).listen(port, function () {
