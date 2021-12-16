@@ -2,10 +2,10 @@
   "name": "preparation",
   "version": "1.0.0",
   "description": "Preparation for JSNAD. Training course",
-  "main": "./04_serve-web-content/index.js",
+  "main": "./05_creating-restfull-json-services/index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon ./04_serve-web-content/index.js"
+    "start": "nodemon ./05_creating-restfull-json-services/index.js"
   },
   "keywords": [],
   "author": "",
