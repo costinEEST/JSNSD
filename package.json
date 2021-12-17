@@ -2,10 +2,10 @@
   "name": "preparation",
   "version": "1.0.0",
   "description": "Preparation for JSNAD",
-  "main": "./09_handling-user-input/index.js",
+  "main": "./10_mitigating-attacks/index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon ./09_handling-user-input/index.js"
+    "start": "nodemon ./10_mitigating-attacks/index.js"
   },
   "keywords": [],
   "author": "",
