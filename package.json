@@ -2,10 +2,10 @@
   "name": "preparation",
   "version": "1.0.0",
   "description": "Preparation for JSNAD",
-  "main": "./08_proxying-http-requests/index.js",
+  "main": "./09_handling-user-input/index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon ./08_proxying-http-requests/index.js"
+    "start": "nodemon ./09_handling-user-input/index.js"
   },
   "keywords": [],
   "author": "",
